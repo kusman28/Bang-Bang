@@ -3,9 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 class DetailScreen extends StatelessWidget {
   final image;
+  final name;
+  final info;
+  final proc;
 
   ///For hero tagging and showing relative image
-  DetailScreen(this.image);
+  DetailScreen(this.image, this.name, this.info, this.proc);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +53,7 @@ class DetailScreen extends StatelessWidget {
                         Row(
                           children: <Widget>[
                             Text(
-                              "Pasung",
+                              name,
                               style: GoogleFonts.roboto(
                                   fontSize: 22, fontWeight: FontWeight.bold),
                             ),
@@ -110,34 +113,34 @@ class DetailScreen extends StatelessWidget {
                         Container(
                           child: Row(
                             children: <Widget>[
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                      border:
-                                          Border.all(color: Colors.grey[200])),
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 16),
-                                  child: Column(
-                                    children: <Widget>[
-                                      Text(
-                                        "Calories",
-                                        style: GoogleFonts.roboto(
-                                            color: Colors.grey),
-                                      ),
-                                      Text(
-                                        "174KCal",
-                                        style: GoogleFonts.roboto(
-                                            color: Colors.grey[900],
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
+                              // Expanded(
+                              //   child: Container(
+                              //     decoration: BoxDecoration(
+                              //         borderRadius: BorderRadius.circular(10),
+                              //         border:
+                              //             Border.all(color: Colors.grey[200])),
+                              //     padding:
+                              //         const EdgeInsets.symmetric(vertical: 16),
+                              //     child: Column(
+                              //       children: <Widget>[
+                              //         Text(
+                              //           "Calories",
+                              //           style: GoogleFonts.roboto(
+                              //               color: Colors.grey),
+                              //         ),
+                              //         Text(
+                              //           "174KCal",
+                              //           style: GoogleFonts.roboto(
+                              //               color: Colors.grey[900],
+                              //               fontWeight: FontWeight.bold),
+                              //         ),
+                              //       ],
+                              //     ),
+                              //   ),
+                              // ),
+                              // SizedBox(
+                              //   width: 10,
+                              // ),
                               Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -154,7 +157,7 @@ class DetailScreen extends StatelessWidget {
                                             color: Colors.grey),
                                       ),
                                       Text(
-                                        "06",
+                                        "5",
                                         style: GoogleFonts.roboto(
                                             color: Colors.grey[900],
                                             fontWeight: FontWeight.bold),
@@ -200,7 +203,7 @@ class DetailScreen extends StatelessWidget {
                         ),
 
                         Text(
-                          "About Recipe",
+                          "About",
                           style: GoogleFonts.roboto(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
@@ -210,7 +213,7 @@ class DetailScreen extends StatelessWidget {
                         ),
 
                         Text(
-                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                          info,
                           style: GoogleFonts.roboto(
                               fontWeight: FontWeight.w300, color: Colors.grey),
                         ),
@@ -220,7 +223,7 @@ class DetailScreen extends StatelessWidget {
                         ),
 
                         Text(
-                          "Cooking Method",
+                          "Procedure",
                           style: GoogleFonts.roboto(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
@@ -230,7 +233,7 @@ class DetailScreen extends StatelessWidget {
                         ),
 
                         Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida mauris ut semper posuere. Fusce volutpat neque non elementum rutrum. Phasellus et lacus et lacus accumsan commodo ac quis felis. Proin quam lorem, pellentesque in pretium ac, convallis et massa. Donec in nisi magna. In rutrum, nibh id interdum auctor, nisl elit ultricies arcu, ut ullamcorper ipsum mauris quis eros. Aenean ex tortor, pretium eu vulputate a, consectetur vel diam. Cras nulla nisl, euismod eu purus ac, sagittis viverra elit. Duis pulvinar sem quis fermentum iaculis. Quisque pharetra turpis velit, ut hendrerit tortor finibus id. Sed eu pretium libero.Vestibulum semper justo eu purus suscipit scelerisque. Proin eget rhoncus ex. Nam eget egestas nisi. Morbi molestie imperdiet sapien, ut ornare est laoreet in. Nam fermentum venenatis lorem, et scelerisque ante fermentum eget. Vestibulum eget urna ullamcorper, consequat odio et, efficitur arcu. Ut molestie feugiat tristique. Ut lectus erat, malesuada eget elit et, laoreet commodo augue. Nullam at velit vel ipsum tristique rhoncus. Fusce euismod facilisis lorem nec consequat. Donec in turpis tellus. Nunc at massa et sapien hendrerit volutpat. Curabitur condimentum, nibh hendrerit fermentum suscipit, justo lacus pellentesque felis, vitae rhoncus mi est sit amet massa. Donec id hendrerit felis, at blandit ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                          proc,
                           style: GoogleFonts.roboto(
                               fontWeight: FontWeight.w300, color: Colors.grey),
                         ),

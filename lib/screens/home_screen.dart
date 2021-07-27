@@ -21,6 +21,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final foodNames = ["Daral", "Juwalan", "Wadjit", "Putli Mandi", "Pasung"];
 
+  final foodInfos = [
+    "The Daral is a native tausug food in Zamboanga City. It is a long-shaped tausug food. We use ingredients that are all found locally in Mindanao. These ingredients include grated coconut and thin dough. The sweetness and tastiness of it jives together.",
+    "Juwalan Info.",
+    "Wadjit Info.",
+    "This is is called PUTLI-MANDI to tausugs ( southern philippines) and Pichi-pichi for some filipinos. Pichi-pichi is a traditional Filipino dessert. It is made with grated cassava or cassava flour, pandan water and sugar. Steamed then rolled in grated coconut. Pichi-pichi is a very soft, gelatinous texture. And are made with different colors. Recipe Courtesy of Nhing Yusop",
+    "Pasung Tausug is a kind of Tausug bang bang (confectionery) has a cone like shaped made from flour, rice flour and sometimes cassava. It resembles Kuih Pasong of Malaysia or Indonesia but its origin is unknown, therefore we can assume that pasung is native to the Tausug. It is available in any coffee shop in Sulu and others in Zamboanga, Basilan & Tawi-Tawi, it could be eaten in breakfast or in the afternoon merienda. It is soft, fluffy and sweet, you can’t have enough of it.",
+  ];
+
+  final foodProc = [
+    "Daral Procedure.",
+    "Juwalan Procedure.",
+    "Wadjit Procedure.",
+    "Mix the sugar and the pandan flavored water and mix until sugar is dissolved. mix in the cassava and then add the lye water drop by drop mixing well as you do so.\nPour into a mold or bowl that fits your bamboo steamer. steam until the mixture becomes translucent.\nWhile still hot scoop out the cooked mixture (use ice cream scoop or a tablespoon the same size as the scoop) and roll into grated coconut.",
+    "Put a fastener on the side of banana cone shape.\nLevel the mouth of banana cone shape with knife or scissor.\nPour the all purpose flour to a basin\nProduce 2 liters of coconut milk\nDissolve the brown sugar with coconut milk or water in small basin. Pulverize the sugar with hand.\nSift the dissolved brown sugar to a basin with flour\nPour the remaining coconut milk to a basin with flour\nLiquefy the flour with coconut milk and dissolved brown sugar until it easily to pour to a cone shape. If the admixture isn’t easily to pour add more water to the basin.\nSteam the filled banana cone shape on the steamer.\nIf the admixture goes above half inches from the mouth of a cone shape, the pasung is already cooked.\n\nTo make a banana cone shape\nTear 12 X 6 inches of banana leaves and make it a cone shape. Make sure the bottom of banana cone shape is close.\nTo check it pours the water into banana cone shape and make sure the water permeates slowly.\n",
+  ];
+
   @override
   Widget build(BuildContext context) {
     ///For screen size
@@ -160,8 +176,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        DetailScreen(images[4 - index])));
+                                    builder: (context) => DetailScreen(
+                                        images[4 - index],
+                                        foodNames[4 - index],
+                                        foodInfos[4 - index],
+                                        foodProc[4 - index])));
                           },
                           child: AspectRatio(
                               aspectRatio: 0.9 / 1,
