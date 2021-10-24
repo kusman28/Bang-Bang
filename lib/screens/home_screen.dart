@@ -8,7 +8,22 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex = 0;
+  // int selectedIndex = 0;
+
+  // final tabs = [
+  //   Center(
+  //     child: Text('Home'),
+  //   ),
+  //   Center(
+  //     child: Text('Recipes'),
+  //   ),
+  //   Center(
+  //     child: Text('Facts'),
+  //   ),
+  //   Center(
+  //     child: Text('Quiz'),
+  //   )
+  // ];
 
   ///Image paths and food names
   final images = [
@@ -30,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   final foodProc = [
-    "Daral Procedure.",
+    "Whisk water, ½ cup of NESTLÉ All Purpose Cream, flour, egg, vegetable oil and vanilla together in a bowl. Strain batter and set aside for 5 minutes.\nPreheat a non stick pan and four about ½ cup of the crepe batter. Swirl to spread batter evenly. Cook for 1 minute. Flip and cook for another minute. Cook the rest of the batter and set aside.\nFor the filling, combine grated coconut, ½ cup of NESTLÉ All Purpose Cream, water and brown sugar in a pan. Cook over medium heat until dry.\nPlace 2 tbsp of the filling on every crepe. Fold the sides and roll tightly.",
     "Juwalan Procedure.",
     "Wadjit Procedure.",
     "Mix the sugar and the pandan flavored water and mix until sugar is dissolved. mix in the cassava and then add the lye water drop by drop mixing well as you do so.\nPour into a mold or bowl that fits your bamboo steamer. steam until the mixture becomes translucent.\nWhile still hot scoop out the cooked mixture (use ice cream scoop or a tablespoon the same size as the scoop) and roll into grated coconut.",
@@ -42,25 +57,25 @@ class _HomeScreenState extends State<HomeScreen> {
     ///For screen size
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.fastfood), title: Text("Recipes")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.question_answer), title: Text("Facts")),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.gamepad), title: Text("Quiz")),
-        ],
-        iconSize: 30,
-        currentIndex: selectedIndex,
-        onTap: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.fastfood), title: Text("Recipes")),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.question_answer), title: Text("Facts")),
+      //     BottomNavigationBarItem(
+      //         icon: Icon(Icons.gamepad), title: Text("Quiz")),
+      //   ],
+      //   iconSize: 30,
+      //   currentIndex: selectedIndex,
+      //   onTap: (index) {
+      //     setState(() {
+      //       selectedIndex = index;
+      //     });
+      //   },
+      //   type: BottomNavigationBarType.fixed,
+      // ),
       body: SafeArea(
         child: Container(
           width: double.infinity,
