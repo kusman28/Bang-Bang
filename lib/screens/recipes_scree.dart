@@ -38,8 +38,8 @@ class _RecipesState extends State<Recipes> {
     "• 1 Cup of Flour.\n• 1/ & 1/2 Cup of Water.\n• Oil for Greasing",
     "• 2 cups Flour\n• 1 cup Sugar\n• 3 cups Coconut Milk\n• Banana leaves\n• Toothpicks",
     "• 1/2 kg glutinous rice\n•1/4 kg brown sugar\n•1 big coconut/3 cups coconut milk\n•1 tbsp vanilla essence",
-    "• 2 Cups of Glutinous rice flour\n•1/2 Cup of regular flour\n•1 & 1/4 Cups of warm water\n•Violet food color (Optional any color or no color will do)\n•2 Tbsp. cooking oil\n•1 to 2 Cups of Hinti (Grated sweet coconut)",
-    "• Banana\n•Flour\n•Cooking Oil\n•Salt",
+    "• 2 Cups of Glutinous rice flour\n• 1/2 Cup of regular flour\n• 1 & 1/4 Cups of warm water\n• Violet food color (Optional any color or no color will do)\n• 2 Tbsp. cooking oil\n• 1 to 2 Cups of Hinti (Grated sweet coconut)",
+    "• Banana\n• Flour\n• Cooking Oil\n• Salt",
   ];
 
   static List<String> urls = [
