@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       Expanded(
                         child: Text(
-                          "Bang-Bang:\n “Tausug's Pastries.”",
+                          "TS'Treats:\n “Tausug's Pastries.”",
                           style: GoogleFonts.playfairDisplay(fontSize: 30),
                         ),
                       ),

@@ -14,7 +14,19 @@ class RecipeDetails extends StatefulWidget {
 class _RecipeDetailsState extends State<RecipeDetails> {
   YoutubePlayerController _controller;
 
-  void runYTPlayer() {
+  // void runYTPlayer() {
+  //   _controller = YoutubePlayerController(
+  //       initialVideoId: YoutubePlayer.convertUrlToId(widget.recipeModel.url),
+  //       flags: YoutubePlayerFlags(
+  //         enableCaption: false,
+  //         isLive: false,
+  //         autoPlay: true,
+  //       ));
+  // }
+
+  @override
+  void initState() {
+    // runYTPlayer();
     _controller = YoutubePlayerController(
         initialVideoId: YoutubePlayer.convertUrlToId(widget.recipeModel.url),
         flags: YoutubePlayerFlags(
@@ -22,11 +34,6 @@ class _RecipeDetailsState extends State<RecipeDetails> {
           isLive: false,
           autoPlay: true,
         ));
-  }
-
-  @override
-  void initState() {
-    runYTPlayer();
     super.initState();
   }
 
